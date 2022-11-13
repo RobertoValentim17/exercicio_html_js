@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.container-header,
+.perguntas {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body > header  {
+    background-color: rgb(52, 165, 23);
+    padding: 16px 0;
+    color: rgb(236, 236, 236);
+}
+
+.container-header {
+    padding: 24px 0;
+}
+
+.perguntas {
+    padding: 28px 0;
+}
+
+/* Fonters e cores */
+
+.container-header,
+.perguntas {
+    font-family: 'Sono', sans-serif;
+    font-size: 16px;
+}
+
+.perguntas {
+    font-weight: bolder;
+}
+
+#primeiras-perguntas {
+    background-color:  rgba(162, 165, 0, 0.336)
+}
+
+
