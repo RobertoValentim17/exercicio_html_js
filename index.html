@@ -12,17 +12,23 @@
 </head>
 <header>
     <div class="container">
-        <h1>Questões Lógicas</h1>
+        <h1>Ebac Prêmios</h1>
     </div>
 </header>
 <body>
     <div class="container-header">
-        <h3>Primeiras perguntas:</h3>
-        <br>
-        <form>
-            <input type="number" id="numero-conta" required placeholder="number one">
-            <input type="number" id="numero-conta" required placeholder="number two">
+        <h3>Um desafio para você !</h3>
+        <form id="number-one">
+            <p>Coloque dois números no espaço branco, um dos espaços tem que receber um número maior para ganhar o prêmio.</p>
+            <label>.Primeiro número -</label>
+            <input type="number" id="number-one" required placeholder="number one"> <br>
+            <label>.Segundo número -</label>
+            <input type="number" id="number-two" required placeholder="number two"> <br>
+            <button type="submit"  value="calcular">Enviar</button>
         </form>
+        <p id="resposta">
+            
+        </p>
     </div>
 <script src="./main.js"></script>
 </body>
