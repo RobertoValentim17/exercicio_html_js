@@ -1,21 +1,20 @@
-let form = document.getElementById ('form')
+var form = document.getElementById('ebac-form');
 
-form.addEventListener ('submit', function (e) {
-    e.preventDefault();
-    verificar ();
-})
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        verificar();
+    })
 
-    function verificar() {
-    let numberx = document.getElementById('number-one');
-    let number1 = number(numberx.value);
-    let numbery = document.getElementById('number-two');
-    let number2 = number(numbery.value);
-    var resp = document.getElementById('resposta');
+    function verificar(){
+        var numberOne = document.getElementById('number-one')
+        var numberX = Number(numberOne.value)
+        var numberTwo = document.getElementById('number-two')
+        var numberY = Number(numberTwo.value)
+        var resp  = document.getElementById('resposta')
 
-    if (number1 > number2) {
-        resp.innerHTML = `O valor é INVÁLIDO`;
-    } else {
-        resp.innerHTML = 'O valor é VÁLIDO';
+        if (numberX > numberY){
+            resp.innerHTML = `O valor é INVÁLIDO`
+        } else{
+            resp.innerHTML = 'O valor é VÁLIDO'
         }
     }
-
